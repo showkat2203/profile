@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="zxx">
 
+{% load static %}
+
 <!-- Mirrored from getmasum.com/html-preview/abdur-rahman/dekha/dekha/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Nov 2020 13:33:06 GMT -->
 <head>
 
@@ -12,13 +14,13 @@
 <title>Dekha - Creative Personal Resume/portfolio Template</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,600i,700,800" rel="stylesheet">
-<link href="fonts/font-awesome.min.css" rel="stylesheet" />
-<link href="fonts/themify-icons.css" rel="stylesheet" />
-<link href="fonts/etline.css" rel="stylesheet" />
-<link href="css/plugins.css" rel="stylesheet" />
-<link href="css/lightbox.min.css" rel="stylesheet" />
-<link href="css/responsive.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
+<link href="{% static 'fonts/font-awesome.min.css' %}" rel="stylesheet" />
+<link href="{% static 'fonts/themify-icons.css' %}" rel="stylesheet" />
+<link href="{% static 'fonts/etline.css' %}" rel="stylesheet" />
+<link href="{% static 'css/plugins.css' %}" rel="stylesheet" />
+<link href="{% static 'css/lightbox.min.css' %}" rel="stylesheet" />
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" />
 
 
 <!--[if lt IE 9]>
@@ -38,7 +40,7 @@
 <div class="navbar navbar-default navbar-fixed-top menu-top">
 <div class="container">
 <div class="logo">
-<a href="index.html" class="navbar-brand"><p>Sonnet</p></a>
+<a href="{% static 'index.html' %}" class="navbar-brand"><p>Sonnet</p></a>
 <div class="mobile-nav"></div>
 </div>
 <div id="navbar" class="main_menu">
@@ -93,7 +95,7 @@
 <div class="row">
 <div class="col-md-5 col-sm-5 col-xs-12">
 <div class="about_image">
-<img src="images/about.png" alt="about-image" />
+<img src="{% static 'images/about.png' %} " alt="about-image" />
 </div>
 </div>
 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -242,12 +244,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 <div class="work_content_area">
 <div class="col-md-4 col-sm-6 col-xs-12">
 <div class="item-img">
-<img src="images/portfolio/work-1.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %}" alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-1.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -256,12 +258,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
 <div class="item-img">
-<img src="images/portfolio/work-2.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %} " alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-2.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -270,12 +272,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12 element-item Photography marketing">
 <div class="item-img">
-<img src="images/portfolio/work-3.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %} " alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-3.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -284,12 +286,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
 <div class="item-img">
-<img src="images/portfolio/work-4.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %} " alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-4.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -298,12 +300,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12 element-item marketing Photography">
 <div class="item-img">
-<img src="images/portfolio/work-5.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %} " alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-5.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -312,12 +314,12 @@ Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12 element-item design marketing">
 <div class="item-img">
-<img src="images/portfolio/work-6.jpg" alt="" />
+<img src="{% static 'images/portfolio/work-1.jpg' %} " alt="" />
 <div class="item-img-overlay">
 <div class="overlay-info full-width">
 <p>Photography</p>
 <h5>Creative Web Design</h5>
-<a href="images/portfolio/work-6.jpg" data-lightbox="images">
+<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 <span class="icon"><i class="ti-arrow-right"></i></span>
 </a>
 </div>
@@ -679,20 +681,20 @@ ever since
 </div>
 
 
-<script data-cfasync="false" src="https://getmasum.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/modernizr-2.8.3.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/jquery.inview.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/animated-headline.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/slick-nav.js"></script>
-<script src="js/form-contact.js"></script>
-<script src="js/scrolltopcontrol.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/main.js"></script>
+<script data-cfasync="false" src="https://getmasum.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.min.js' %} "></script>
+<script src="{% static 'js/bootstrap.min.js' %} "></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+<script src="{% static 'js/jquery.nav.js' %}"></script>
+<script src="{% static 'js/jquery.inview.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/animated-headline.js' %}"></script>
+<script src="{% static 'js/lightbox.min.js' %}"></script>
+<script src="{% static 'js/slick-nav.js' %}"></script>
+<script src="{% static 'js/form-contact.js' %}"></script>
+<script src="{% static 'js/scrolltopcontrol.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 </body>
 
 <!-- Mirrored from getmasum.com/html-preview/abdur-rahman/dekha/dekha/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Nov 2020 13:33:44 GMT -->
