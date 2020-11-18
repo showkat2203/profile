@@ -170,7 +170,7 @@
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-bargraph"></i>
-						<h4>Digital Merketing</h4>
+						<h4>Embedded Development</h4>
 						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 					</div>
@@ -178,7 +178,7 @@
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-piechart"></i>
-						<h4>Branding & identity</h4>
+						<h4>Machine Learning</h4>
 						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 					</div>
@@ -186,12 +186,12 @@
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-layers"></i>
-						<h4>Customizability</h4>
+						<h4>Web Scraping</h4>
 						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<!-- <div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-mobile"></i>
 						<h4>Responsive</h4>
@@ -206,7 +206,7 @@
 						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -218,7 +218,7 @@
 				<div class="col-lg-12 text-center">
 					<div class="cta_content">
 						<h3>I Am Available For Freelancer !</h3>
-						<a href="#about" class="btn btn-default main_btn"><span>Hire Me</span></a>
+						<a href="#contact" class="btn btn-default main_btn"><span>Hire Me</span></a>
 					</div>
 				</div>
 			</div>
@@ -242,19 +242,19 @@
 				<div class="work_filter text-center">
 					<ul>
 						<li class="active" data-filter="*">All</li>
-						<li data-filter=".design">Design</li>
-						<li data-filter=".marketing">Marketing</li>
-						<li data-filter=".Photography">Photography</li>
+						<li data-filter=".embedded">Embedded</li>
+						<li data-filter=".web">Web</li>
+						<li data-filter=".machine-learning">Machine Learning</li>
 					</ul>
 				</div>
 				<div class="work_content_area">
-					<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item embedded">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-1.jpg' %}" alt="" />
 							<div class="item-img-overlay">
 								<div class="overlay-info full-width">
-									<p>Photography</p>
-									<h5>Creative Web Design</h5>
+									<p>Embedded / IoT </p>
+									<h5>The next generation Galaxy Fit</h5>
 									<a href="{% static 'images/portfolio/work-1.jpg' %} " data-lightbox="images">
 										<span class="icon"><i class="ti-arrow-right"></i></span>
 									</a>
@@ -262,7 +262,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item embedded">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-2.jpg' %} " alt="" />
 							<div class="item-img-overlay">
@@ -276,7 +276,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Photography marketing">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item web">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-3.jpg' %} " alt="" />
 							<div class="item-img-overlay">
@@ -290,7 +290,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item embedded">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-4.jpg' %} " alt="" />
 							<div class="item-img-overlay">
@@ -304,7 +304,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item marketing Photography">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item machine-learning">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-5.jpg' %} " alt="" />
 							<div class="item-img-overlay">
@@ -318,7 +318,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design marketing">
+					<div class="col-md-4 col-sm-6 col-xs-12 element-item machine-learning">
 						<div class="item-img">
 							<img src="{% static 'images/portfolio/work-6.jpg' %} " alt="" />
 							<div class="item-img-overlay">
@@ -345,54 +345,42 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="education-container wow fadeInUp">
-						<ul class="edu-list">
+						<ul class="edu-list experience">
 							<li>
-								<strong>2000 - 2005</strong>
-								<h5>Computer science</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
+								<strong>Jul 2018 - Present</strong>
+								<h5>Software Engineer</h5>
+								<h6>Samsung R&D Institute Bangladesh, Dhaka</h6>
+								<p>Built communication protocol libraries in C for wearable IoT devices(e.g. Samsung Galaxy Fit, Smart Ring) based on Dialog’s FreeRTOS DA1469x SDK. Worked with MCU peripherals including SPI, UART etc. Taken part in software architecture design and code reviews.</p>
 							</li>
 							<li>
-								<strong>2006 - 2009</strong>
-								<h5>Computer science</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
+								<strong>JAN 2018 - JUL 2018</strong>
+								<h5>Junior Software Engineer</h5>
+								<h6>Divine IT Ltd, Dhaka</h6>
+								<p>Worked as a backend software engineer in ​ Python, Django & Javascript​, MySQL. Worked on a large and efficient web based ERP solution for multipurpose. Worked on a small part of an e-Commerce web app built on Django-Oscar too.</p>
 							</li>
 							<li>
-								<strong>2010 - 2013</strong>
-								<h5>Computer science</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
+								<strong>MAY 2015 - SEP 2017</strong>
+								<h5>Problem Setter and Judge</h5>
+								<h6>Daffodil International University, Dhaka</h6>
+								<p>Prepared problem set for DIU Intra University and DIU Take Off Programming Contest and conduct contest as judge.</p>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="education-container wow fadeInUp">
-						<ul class="edu-list experience">
+						<ul class="edu-list">
 							<li>
-								<strong>2014 - 2015</strong>
-								<h5>Google company, Melbourne </h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
+								<strong>2013 - 2018</strong>
+								<h5>Computer Sciece and Engineering</h5>
+								<h6>Daffodil International University, Dhaka</h6>
+								<p>Completed Bachelor of Science in CSE with a CGPA 3.13 on scale of 4.00. Worked on machine learning as a final year project. </p>
 							</li>
 							<li>
-								<strong>2016 - 2017</strong>
-								<h5>Google company, Melbourne </h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
-							</li>
-							<li>
-								<strong>2018 - 2018</strong>
-								<h5>Google company, Melbourne </h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores
-									tempora delectus cupiditate</p>
+								<strong>2013 - 2017</strong>
+								<h5>ACM ICPC Contestant</h5>
+								<h6>International Collegiate Programming Contest</h6>
+								<p>Participated in ​four​​ ACM ICPC Dhaka Site Regiona​l and more than six NCPC​ and Inter University Programming Contest.</p>
 							</li>
 						</ul>
 					</div>
@@ -400,6 +388,91 @@
 			</div>
 		</div>
 	</section>
+
+
+	<section id="testimonial_area" class="section_padding pb_70">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="testmonial_slider_area text-center owl-carousel">
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/1.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">Christopher Ryan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/2.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">Alignson Khan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/3.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">William Ryan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/4.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">William Ryan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/5.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">William Ryan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+						<div class="single_testimonial">
+							<div class="pic">
+								<img src="{% static 'images/testimonial/6.jpg' %}" alt="">
+							</div>
+							<h5 class="testimonial-title">William Ryan</h5>
+							<span class="test_designation">Web Developer</span>
+							<p class="description">
+								Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+								ever since
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<section id="blog" class="section_padding pb_70">
 		<div class="container">
