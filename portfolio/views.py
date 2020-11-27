@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import HttpResponse 
+from django.core.mail import send_mail, BadHeaderError
 from portfolio.models import Project, Post, Comment
-from portfolio.forms import CommentForm
+from portfolio.forms import CommentForm, ContactForm
 
 def index(request):
     projects = Project.objects.all()
@@ -47,3 +49,24 @@ def blog_detail(request, pk):
         "form": form,
     }
     return render(request, "blog_detail.html", context)
+
+
+def contact(request):
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        import pdb
+        pdb.set_trace()
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['chysonnet@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+        return render(request, 'index.html', {'form': form})
+    # return render(request, "email.html", {'form': form})
+    return render(request, 'index.html', {'form': form})
