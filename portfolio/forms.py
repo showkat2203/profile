@@ -1,4 +1,5 @@
 from django import forms
+from portfolio.models import Feedback
 
 class CommentForm(forms.Form):
     author = forms.CharField(
@@ -15,7 +16,7 @@ class CommentForm(forms.Form):
         })
     )
 
-class ContactForm(forms.Form):
-    name = forms.CharField(max_length=100)
-    email = forms.EmailField()
-    message = forms.CharField(widget=forms.Textarea)
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Feedback
+        fields = ["name", "email", "subject", "message"]
