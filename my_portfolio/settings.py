@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wt85l$0(&-35&kj&ehx=8xbzzon@3#tg*v-(f^+^-5@ou(a_m$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['powerful-brook-85802.herokuapp.com']
 
