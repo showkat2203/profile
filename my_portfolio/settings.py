@@ -28,7 +28,7 @@ SECRET_KEY = 'wt85l$0(&-35&kj&ehx=8xbzzon@3#tg*v-(f^+^-5@ou(a_m$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://powerful-brook-85802.herokuapp.com/', '*']
+ALLOWED_HOSTS = ['powerful-brook-85802.herokuapp.com']
 
 
 # Application definition
@@ -134,7 +134,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
