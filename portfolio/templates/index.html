@@ -161,34 +161,34 @@
 			<div class="row text-center">
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
-						<i class="icon-laptop"></i>
-						<h4>Web Development</h4>
-						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
+						<i class="icon-bargraph"></i>
+						<h4>Embedded Development</h4>
+						<P>More than 2 year professional experience as an embedded developer working 
+							on FreeRTOS platform at Samsung R&D Institute Bangladesh.</P>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
-						<i class="icon-bargraph"></i>
-						<h4>Embedded Development</h4>
-						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
+						<i class="icon-laptop"></i>
+						<h4>Web Development</h4>
+						<P>1 year working experience in web development as a backend Django developer.
+							Worked on some pet project on both backend and fron-end. </P>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-piechart"></i>
 						<h4>Machine Learning</h4>
-						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
+						<P>Experienced in image processing and machine learning algorithms and tools. 
+							Developed one prototype for Rice leaf disease detection.   </P>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="single-service">
 						<i class="icon-layers"></i>
 						<h4>Web Scraping</h4>
-						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Sed venenatis lectus tortor, et congue felis laoreet ac</P>
+						<P>Have professional experienced in web scraping, data cleaning and data mining
+							using python libraries e.g. BeautifulSoup, Scrapy & Selenium </P>
 					</div>
 				</div>
 				<!-- <div class="col-md-4 col-sm-6 col-xs-12">
@@ -244,7 +244,7 @@
 						<li class="active" data-filter="*">All</li>
 						<li data-filter=".embedded">Embedded</li>
 						<li data-filter=".web">Web</li>
-						<li data-filter=".machine-learning">Machine Learning</li>
+						<!-- <li data-filter=".machine-learning">Machine Learning</li> -->
 					</ul>
 				</div>
 				<div class="work_content_area">
@@ -333,15 +333,22 @@
 						</div>
 					</div> -->
 				</div>
-				<div class="port_content_button text-center">
+				<!-- <div class="port_content_button text-center">
 					<a href="#0" class='btn btn-default main_btn'>load more</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
 
 	<section id="resume" class="section_padding">
 		<div class="container">
+			<div class="col-md-12 col-sm-12-col-xs-12">
+				<div class="section_heading text-center">
+					<strong>Experience</strong>
+					<!-- <h2>My Work</h2> -->
+					<!-- <div class="sm_border"></div> -->
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="education-container wow fadeInUp">
@@ -579,7 +586,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7 col-sm-12">
-					<form id="contact-form" action="{% url 'contact' %}" method="post"  enctype="multipart/form-data">
+					<form id="contact-form" action="{% url 'contact' %}" method="post" enctype="multipart/form-data">
 						{% csrf_token %}
 						<div class="row">
 							<div class="input_padding text-center">
