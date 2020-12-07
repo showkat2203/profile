@@ -55,8 +55,8 @@ def contact(request):
     if request.method == 'GET':
         form = ContactForm()
     else:
-        import pdb
-        pdb.set_trace()
+        # import pdb
+        # pdb.set_trace()
         form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
